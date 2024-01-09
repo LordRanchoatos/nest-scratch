@@ -1,14 +1,14 @@
-import { Controller, Get} from '@nestjs/common';
+import { Controller, Get } from '@nestjs/common';
 
 @Controller('app')
-export class AppController{
-    @Get()
-    getRoute(){
-        return 'Hi there!!!';
-    }
+export class AppController {
+  @Get('')
+  getRoute() {
+    return 'Hi there!!!';
+  }
 
-    @Get('/info')
-    getInfo(){
-        return 'Contact us on Disord.'
-    }
+  @Get('/info')
+  getInfo() {
+    return 'Contact us on Disord.';
+  }
 }
